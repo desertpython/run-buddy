@@ -412,6 +412,9 @@ section {
         grid-column: 1 / -1;
         grid-row: -1;
     }
+    .trainer-img h3, .trainer-img h4, .trainer::after {
+        display: none;
+    }
 }
 
 
@@ -572,4 +575,57 @@ section {
 .checkbox-wrapper input:checked + label::after, 
 .radio-wrapper input:checked + label::after {
   content: "";
+}
+.trainer-1 {
+    background-image: "../assets/trainer-1"
+}
+.trainer-img {
+    width: 100%;
+    min-height: 300px;
+    display: flex;
+    padding: 15px;
+    align-items: ???;
+}
+.trainer-img::after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: rgba(252,225,56,0.3);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: ???;
+}
+.trainer-img {
+    background: linear-gradient(rgba (252,225,56,0.3)), (--secondary-color);
+}
+.trainer-img h3 {
+    position: relative;
+    z-index: ???;
+    top: 200px;
+}
+.trainer-img h4 {
+    position: relative;
+    z-index: ???;
+    top: 200px;
+}
+.trainer-bio h3 {
+    font-size: 28px;
+    margin-bottom: 5px;
+    display: none;
+}
+.trainer-bio h4 {
+    font-size: 22px;
+    display: none;
+}
+/* apply overflow to parent (whatever that means) */
+.trainer:hover .trainer-img h3, .trainer:hover .trainer-img h4 {
+    /* not sure what goes here yet */
+}
+.trainer-img h3 {
+    /* */
+}
+.trainer-img h4 {
+    /* */
 }
